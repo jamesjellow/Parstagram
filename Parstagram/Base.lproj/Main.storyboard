@@ -133,7 +133,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xti-l2-lBc">
                                 <rect key="frame" x="8" y="374" width="351" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="onSubmitButton:" destination="h69-S1-107" eventType="touchUpInside" id="t02-HS-z9E"/>
                                 </connections>
