@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="Q3F-Le-sEB">
             <objects>
-                <viewController id="Mdp-hM-1TD" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Mdp-hM-1TD" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7z6-LF-wFF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wWR-ry-eha"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CD9-u1-hzN"/>
                     <connections>
                         <outlet property="passwordField" destination="w7q-Mp-2Jr" id="moc-ov-qsf"/>
                         <outlet property="usernameField" destination="old-By-jwl" id="WAT-MT-m7N"/>
@@ -157,6 +158,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="SNG-j8-MSh">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="0ZT-X6-no2">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="BYZ-38-t0r" id="HJc-x5-QWb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="0Fy-EA-Hk6">
                             <connections>
                                 <segue destination="h69-S1-107" kind="presentation" modalPresentationStyle="fullScreen" id="ZL4-d1-iwK"/>
@@ -223,7 +229,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gTB-N1-iLw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FGg-No-xFb" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="FGg-No-xFb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jpd-CT-3JP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
